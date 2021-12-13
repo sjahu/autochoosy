@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "autochoosy",
+  "version": "1.0.1",
+  "description": "Automatically open matching URLs with Choosy from in-browser",
+  "homepage_url": "https://github.com/sjahu/autochoosy",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "autochoosy@shumphries.ca"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+          "<all_urls>"
+        ],
+      "js": ["autochoosy.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "permissions": [
+    "storage"
+  ]
+}

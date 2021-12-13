@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <form id="options-form">
+      <h2>Pattern</h2>
+      <p>This is the regex that will be used to determine whether a page should be sent to Choosy. If you need to specify multiple patterns, enclose each in parentheses and separate them with a `|` character. Remember to escape characters that have special meanings within a regex, like `.`, with backslashes.</p>
+      <p>❗️ Be very careful not to save a pattern that matches any URL Choosy is configured to open in this browser-- that would create an infinite loop.</p>
+      <textarea id="pattern" rows="4" style="width: 100%;"></textarea>
+      <br><br>
+      <button type="submit" id="submit-button">Save</button>
+    </form>
+    <script src="options.js"></script>
+  </body>
+</html>
