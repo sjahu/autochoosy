@@ -11,7 +11,11 @@ Automatically open matching URLs with Choosy from in-browser.
 1. Install [Choosy](https://www.choosyosx.com/) and configure rules.
 2. Configure your browser to always open `x-choosy://` URLs with Choosy.
   - Paste `x-choosy://https://example.com/` into the address bar and, when prompted, select "Choosy" and "Always use this application to open x-choosy links".
-3. Download and install the latest version of *autochoosy* from https://addons.mozilla.org/firefox/addon/autochoosy/.
+3. Download and install the latest version of *autochoosy* from https://addons.mozilla.org/firefox/addon/autochoosy/ or from this repo's [releases](https://github.com/sjahu/autochoosy/releases).
+
+### Installing from source
+
+If you use [Firefox Developer Edition](https://www.mozilla.org/firefox/developer/) or another version that permits the installation of unsigned add-ons, you can package **autochoosy** yourself by running `zip autochoozy.xpi *` in the source directory.
 
 ## Configuration
 
